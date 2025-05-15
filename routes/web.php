@@ -24,3 +24,7 @@ Route::get('satu', function () {
 Route::get('intro', function () {
 	return view('intro');
 });
+
+Route::get('test', function () {
+	return view('test');
+});
