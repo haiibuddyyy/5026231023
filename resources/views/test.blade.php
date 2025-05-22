@@ -56,7 +56,7 @@
             border: none;
             position: absolute;
             top: 15px;
-            left: 15px; 
+            left: 15px;
             z-index: 1000;
         }
 
@@ -152,12 +152,12 @@
         <ul class="nav nav-pills flex-column w-100">
             <li class="nav-item">
                 <a href="#" class="nav-link text-light d-flex align-items-center">
-                    <img src="./image/file.svg" width="20" height="20" class="me-2"> Helperlog
+                    <img src="{{ asset('images/file.svg') }}" width="20" height="20" class="me-2"> Helperlog
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link text-light d-flex align-items-center">
-                    <img src="./image/search.svg" width="20" height="20" class="me-2"> Helperfind
+                    <img src="{{ asset('images/search.svg') }}" width="20" height="20" class="me-2"> Helperfind
                 </a>
             </li>
         </ul>
@@ -165,7 +165,7 @@
         <!-- Logout Button -->
         <div class="mt-auto w-100 text-center mb-3" style="padding-bottom: 100px;">
             <button type="button" class="btn btn-outline-light">
-                <img src="./image/login.svg" width="20" height="20" class="me-2"> Log out
+                <img src="{{ asset('images/login.svg') }}" width="20" height="20" class="me-2"> Log out
             </button>
         </div>
     </div>
@@ -173,7 +173,7 @@
 
 <!-- Tombol Toggle Sidebar -->
 <button class="toggle-btn" onclick="toggleSidebar()">
-    <img src="./image/bars-solid.svg" alt="Toggle Sidebar">
+    <img src="{{ asset('images/bars-solid.svg') }}" alt="Toggle Sidebar">
 </button>
 
 <!-- Main Content -->
@@ -181,7 +181,7 @@
     <!-- Header -->
     <div class="d-flex align-items-center mb-4">
         <a href="#" class="text-dark me-3">
-            <img src="./image/arrow-left-solid.svg" width="24" height="24">
+            <img src="{{ asset('images/arrow-left-solid.svg') }}" width="24" height="24">
         </a>
         <h5 class="mb-0">Detail PRT</h5>
     </div>
@@ -190,11 +190,11 @@
     <div class="row">
         <!-- Foto Profil -->
         <div class="col-md-5 text-center">
-            <img src="./image/hyundoo.jpg" class="profile-img" alt="Profile Picture" style="width: 400px; height: 450px;">
+            <img src="{{ asset('images/hyundoo.jpg') }}" class="profile-img" alt="Profile Picture" style="width: 400px; height: 450px;">
             <div class="d-flex justify-content-center gap-2 mt-2">
-                <img src="./image/hyundo2.jpg" class="thumbnail-img" alt="Thumbnail" style="width: 110px; height: 150px;">
-                <img src="./image/hyundo3.jpg" class="thumbnail-img" alt="Thumbnail" style="width: 110px; height: 150px;">
-                <img src="./image/hyundo4.jpg" class="thumbnail-img" alt="Thumbnail" style="width: 110px; height: 150px;">
+                <img src="{{ asset('images/hyundo2.jpg') }}" class="thumbnail-img" alt="Thumbnail" style="width: 110px; height: 150px;">
+                <img src="{{ asset('images/hyundo3.jpg') }}" class="thumbnail-img" alt="Thumbnail" style="width: 110px; height: 150px;">
+                <img src="{{ asset('images/hyundo4.jpg') }}" class="thumbnail-img" alt="Thumbnail" style="width: 110px; height: 150px;">
             </div>
         </div>
 

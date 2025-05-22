@@ -17,14 +17,35 @@ Route::get('blog', function () {
 	return view('blog');
 });
 
-Route::get('satu', function () {
-	return view('bootstrap1');
+Route::get('pertemuandua', function () {
+    return view('pertemuandua');
 });
 
 Route::get('intro', function () {
 	return view('intro');
 });
 
+Route::get('js1', function () {
+    return view('js1');
+});
+
+Route::get('validasi1', function () {
+    return view('validasi1');
+});
+
+Route::get('linktree', function () {
+    return view('linktree');
+});
+
 Route::get('test', function () {
 	return view('test');
 });
+
+Route::get('ets', function () {
+    return view('index');
+});
+
+Route::get('frontend', function () {
+    return view('frontend');
+});
+

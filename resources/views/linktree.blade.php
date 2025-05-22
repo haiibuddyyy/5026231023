@@ -151,8 +151,8 @@
         align-items: center;
         margin: 0 auto;
         display: flex;
-        justify-content: center; 
-        flex-wrap: wrap; 
+        justify-content: center;
+        flex-wrap: wrap;
         overflow: hidden;
         max-width: 100%;
         box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.1);
@@ -213,7 +213,7 @@
         gap: 10px;
         transition: transform 0.2s ease, background-color 0.3s;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        line-height: 1;          
+        line-height: 1;
       }
 
       .social-buttons p{
@@ -225,7 +225,7 @@
       .social-buttons .btn:hover {
         transform: scale(1.010);
       }
-    
+
       .follow-linktree {
         padding-bottom: 100px;
       }
@@ -359,7 +359,7 @@
         background-color: #6a1212;
         border-radius: 20px;
         padding: 12px;
-        width: 140px; 
+        width: 140px;
         height: 210px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         flex-shrink: 0;
@@ -459,7 +459,7 @@
         <div class="topbar">
             <div class="topbar-content">
                 <div class="button-ellipse">
-                    <img src="./image/ellipsis-solid.svg" alt="More Options" />
+                    <img src="{{ asset('images/ellipsis-solid.svg') }}" alt="More Options" />
                 </div>
             </div>
         </div>
@@ -469,11 +469,11 @@
             <div class="profile p-3">
               <div class="profile p-3 d-flex flex-column align-items-center text-center">
                 <img
-                  src="./image/profile2.jpg"
+                  src="./images/profile2.jpg"
                   alt="Paloma"
                   class="rounded-circle mb-2"
                   style="width: 96px; height: 96px; object-fit: cover;" />
-                
+
                 <div class="d-flex align-items-center justify-content-center">
                   <p class="fs-5 fw-bold mb-0">Paloma</p>
                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjUyNDcgMTUuMTIzNEM4LjIwMyAxNC45MjUxIDcuNzk3IDE0LjkyNTEgNy40NzUzIDE1LjEyMzRMNy4xNDg3MyAxNS4zMjQ3QzYuNjk0MiAxNS42MDQ4IDYuMDk5NzQgMTUuNDc4NSA1Ljc5ODQ1IDE1LjAzNzdMNS41ODE5OSAxNC43MjFDNS4zNjg3NSAxNC40MDkgNC45OTc4NSAxNC4yNDM4IDQuNjIzMzIgMTQuMjk0MUw0LjI0MzExIDE0LjM0NTJDMy43MTM5MiAxNC40MTYyIDMuMjIyMjYgMTQuMDU5IDMuMTI2MzEgMTMuNTMzOEwzLjA1NzM3IDEzLjE1NjRDMi45ODk0NyAxMi43ODQ3IDIuNzE3OCAxMi40ODMgMi4zNTUxOSAxMi4zNzY2TDEuOTg3MDkgMTIuMjY4NkMxLjQ3NDc1IDEyLjExODIgMS4xNzA4OCAxMS41OTE5IDEuMjk2ODcgMTEuMDczMUwxLjM4NzM4IDEwLjcwMDNDMS40NzY1NSAxMC4zMzMgMS4zNTEwOSA5Ljk0NjkyIDEuMDYzMSA5LjcwMjI0TDAuNzcwNzU3IDkuNDUzODVDMC4zNjM4NTIgOS4xMDgxMyAwLjMwMDMyNyA4LjUwMzczIDAuNjI2NDYyIDguMDgwOTZMMC44NjA3NzcgNy43NzcyMkMxLjA5MTYgNy40NzgwMSAxLjEzNDA0IDcuMDc0MjQgMC45NzA0NjggNi43MzM1OEwwLjgwNDQyNCA2LjM4Nzc2QzAuNTczMzE0IDUuOTA2NDMgMC43NjExMTQgNS4zMjg0NCAxLjIzMTAxIDUuMDc0ODhMMS41Njg2MSA0Ljg5MjdDMS45MDExNyA0LjcxMzI0IDIuMTA0MTcgNC4zNjE2NCAyLjA5MzMgMy45ODM5TDIuMDgyMjcgMy42MDA0NEMyLjA2NjkyIDMuMDY2NzIgMi40NzM1NyAyLjYxNTA5IDMuMDA1OTcgMi41NzQ1N0wzLjM4ODQ4IDIuNTQ1NDZDMy43NjUyOSAyLjUxNjc4IDQuMDkzNzUgMi4yNzgxNCA0LjIzNzQ2IDEuOTI4NjRMNC4zODMzNSAxLjU3Mzg1QzQuNTg2NCAxLjA4MDAyIDUuMTQxNiAwLjgzMjgzNiA1LjY0NDQ1IDEuMDEyMzdMNi4wMDU3MyAxLjE0MTM1QzYuMzYxNjMgMS4yNjg0MiA2Ljc1ODc1IDEuMTg0MDEgNy4wMzIxOSAwLjkyMzE3M0w3LjMwOTc4IDAuNjU4MzkxQzcuNjk2MTMgMC4yODk4NTIgOC4zMDM4NyAwLjI4OTg1MiA4LjY5MDIyIDAuNjU4MzkyTDguOTY3ODEgMC45MjMxNzNDOS4yNDEyNSAxLjE4NDAxIDkuNjM4MzcgMS4yNjg0MiA5Ljk5NDI3IDEuMTQxMzVMMTAuMzU1NSAxLjAxMjM3QzEwLjg1ODQgMC44MzI4MzYgMTEuNDEzNiAxLjA4MDAyIDExLjYxNjcgMS41NzM4NUwxMS43NjI1IDEuOTI4NjRDMTEuOTA2MyAyLjI3ODE0IDEyLjIzNDcgMi41MTY3OCAxMi42MTE1IDIuNTQ1NDZMMTIuOTk0IDIuNTc0NTdDMTMuNTI2NCAyLjYxNTA5IDEzLjkzMzEgMy4wNjY3MiAxMy45MTc3IDMuNjAwNDRMMTMuOTA2NyAzLjk4MzlDMTMuODk1OCA0LjM2MTY0IDE0LjA5ODggNC43MTMyNCAxNC40MzE0IDQuODkyN0wxNC43NjkgNS4wNzQ4OEMxNS4yMzg5IDUuMzI4NDQgMTUuNDI2NyA1LjkwNjQzIDE1LjE5NTYgNi4zODc3NkwxNS4wMjk1IDYuNzMzNThDMTQuODY2IDcuMDc0MjQgMTQuOTA4NCA3LjQ3ODAxIDE1LjEzOTIgNy43NzcyMkwxNS4zNzM1IDguMDgwOTZDMTUuNjk5NyA4LjUwMzczIDE1LjYzNjEgOS4xMDgxMyAxNS4yMjkyIDkuNDUzODVMMTQuOTM2OSA5LjcwMjI0QzE0LjY0ODkgOS45NDY5MiAxNC41MjM0IDEwLjMzMyAxNC42MTI2IDEwLjcwMDNMMTQuNzAzMSAxMS4wNzMxQzE0LjgyOTEgMTEuNTkxOSAxNC41MjUzIDEyLjExODIgMTQuMDEyOSAxMi4yNjg2TDEzLjY0NDggMTIuMzc2NkMxMy4yODIyIDEyLjQ4MyAxMy4wMTA1IDEyLjc4NDcgMTIuOTQyNiAxMy4xNTY0TDEyLjg3MzcgMTMuNTMzOEMxMi43Nzc3IDE0LjA1OSAxMi4yODYxIDE0LjQxNjIgMTEuNzU2OSAxNC4zNDUyTDExLjM3NjcgMTQuMjk0MUMxMS4wMDIxIDE0LjI0MzggMTAuNjMxMyAxNC40MDkgMTAuNDE4IDE0LjcyMUwxMC4yMDE1IDE1LjAzNzdDOS45MDAyNiAxNS40Nzg1IDkuMzA1OCAxNS42MDQ4IDguODUxMjcgMTUuMzI0N0w4LjUyNDcgMTUuMTIzNFoiIGZpbGw9IiMwMEI2RkYiLz4KPHBhdGggZD0iTTUuMDY5OTggNy41NjI2NUw3LjE5MTMgOS42ODM5N0wxMS40MzM5IDUuNDQxMzMiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K" alt="Verified profile" data-testid="verificationTick" style="padding-left: 5px;">
@@ -531,7 +531,7 @@
                     <a
                         href="https://mail.google.com/mail/?view=cm&fs=1&to=paloma@weareverified.co"
                         class="icon">
-                        <img src="./image/envelop.png"
+                        <img src="{{ asset('images/envelop.png') }}"
                             style="width: 30px; height: 30px;"></a>
                 </div>
             </div>
@@ -548,19 +548,19 @@
                 <div class="shop-section p-3 rounded-5">
                   <div class="d-flex justify-content-between">
                       <img
-                          src="./image/product1.jpg"
+                          src="./images/product1.jpg"
                           alt="Product 1"
-                          class="img-fluid product-img" 
+                          class="img-fluid product-img"
                           onclick="document.getElementById('shopSection').scrollIntoView({ behavior: 'smooth' });" />
                         <img
-                          src="./image/product2.jpg"
+                          src="./images/product2.jpg"
                           alt="Product 2"
                           class="img-fluid product-img"
                           onclick="document.getElementById('shopSection').scrollIntoView({ behavior: 'smooth' });" />
                         <img
-                          src="./image/product3.jpg"
+                          src="./images/product3.jpg"
                           alt="Product 3"
-                          class="img-fluid product-img" 
+                          class="img-fluid product-img"
                           onclick="document.getElementById('shopSection').scrollIntoView({ behavior: 'smooth' });" />
                     </div>
                   <p class="mt-3 text-white">
@@ -670,7 +670,7 @@
                         <i class="bi bi-tiktok"></i> <p>TikTok</p>
                         <span class="ellipsis-icon"><i class="bi bi-three-dots-vertical"></i></span>
                     </a>
-                    <a 
+                    <a
                         href="https://linktr.ee/s/monetize-your-content-with-linktree-shops" class="btn w-100">
                         <span style="width: 20px;"></span> <!-- kosongin bagian kiri -->
                         <p style="flex: 1; text-align: center; margin: 0;">Join Linktree Shops - PALOMASHOPS</p>
@@ -715,9 +715,9 @@
                         <a href="https://www.sephora.co.id/?dxid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&dxgaid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&gad_source=1&gad_campaignid=741857502&gbraid=0AAAAADpAM4K4TF2FYfJpAWhyEVSxiQW8F&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB" target="_blank" class="shoppable-link">
                             <div class="shoppable-card">
                             <div class="shoppable-items">
-                                <img src="./image/sp1.jpg" />
-                                <img src="./image/sp2.jpg" />
-                                <img src="./image/sp3.jpg" />
+                                <img src="{{ asset('images/sp1.jpg') }}" />
+                                <img src="{{ asset('images/sp2.jpg') }}" />
+                                <img src="{{ asset('images/sp3.jpg') }}" />
                             </div>
                             </div>
                         </a>
@@ -726,9 +726,9 @@
                         <a href="https://www.sephora.co.id/?dxid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&dxgaid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&gad_source=1&gad_campaignid=741857502&gbraid=0AAAAADpAM4K4TF2FYfJpAWhyEVSxiQW8F&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB" target="_blank" class="shoppable-link">
                             <div class="shoppable-card">
                             <div class="shoppable-items">
-                                <img src="./image/product1.jpg" />
-                                <img src="./image/product2.jpg" />
-                                <img src="./image/product3.jpg" />
+                                <img src="{{ asset('images/product1.jpg') }}" />
+                                <img src="{{ asset('images/product2.jpg') }}" />
+                                <img src="{{ asset('images/product3.jpg') }}" />
                             </div>
                             </div>
                         </a>
@@ -736,9 +736,9 @@
                         <a href="https://www.sephora.co.id/?dxid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&dxgaid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&gad_source=1&gad_campaignid=741857502&gbraid=0AAAAADpAM4K4TF2FYfJpAWhyEVSxiQW8F&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB" target="_blank" class="shoppable-link">
                             <div class="shoppable-card">
                             <div class="shoppable-items">
-                                <img src="./image/sp1.jpg" />
-                                <img src="./image/sp2.jpg" />
-                                <img src="./image/sp3.jpg" />
+                                <img src="{{ asset('images/sp1.jpg') }}" />
+                                <img src="{{ asset('images/sp2.jpg') }}" />
+                                <img src="{{ asset('images/sp3.jpg') }}" />
                             </div>
                             </div>
                         </a>
@@ -747,9 +747,9 @@
                         <a href="https://www.sephora.co.id/?dxid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&dxgaid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&gad_source=1&gad_campaignid=741857502&gbraid=0AAAAADpAM4K4TF2FYfJpAWhyEVSxiQW8F&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB" target="_blank" class="shoppable-link">
                             <div class="shoppable-card">
                             <div class="shoppable-items">
-                                <img src="./image/product1.jpg" />
-                                <img src="./image/product2.jpg" />
-                                <img src="./image/product3.jpg" />
+                                <img src="{{ asset('images/product1.jpg') }}" />
+                                <img src="{{ asset('images/product2.jpg') }}" />
+                                <img src="{{ asset('images/product3.jpg') }}" />
                             </div>
                             </div>
                         </a>
@@ -757,9 +757,9 @@
                         <a href="https://www.sephora.co.id/?dxid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&dxgaid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&gad_source=1&gad_campaignid=741857502&gbraid=0AAAAADpAM4K4TF2FYfJpAWhyEVSxiQW8F&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB" target="_blank" class="shoppable-link">
                             <div class="shoppable-card">
                             <div class="shoppable-items">
-                                <img src="./image/sp1.jpg" />
-                                <img src="./image/sp2.jpg" />
-                                <img src="./image/sp3.jpg" />
+                                <img src="{{ asset('images/sp1.jpg') }}" />
+                                <img src="{{ asset('images/sp2.jpg') }}" />
+                                <img src="{{ asset('images/sp3.jpg') }}" />
                             </div>
                             </div>
                         </a>
@@ -768,9 +768,9 @@
                         <a href="https://www.sephora.co.id/?dxid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&dxgaid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&gad_source=1&gad_campaignid=741857502&gbraid=0AAAAADpAM4K4TF2FYfJpAWhyEVSxiQW8F&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB" target="_blank" class="shoppable-link">
                             <div class="shoppable-card">
                             <div class="shoppable-items">
-                                <img src="./image/product1.jpg" />
-                                <img src="./image/product2.jpg" />
-                                <img src="./image/product3.jpg" />
+                                <img src="{{ asset('images/product1.jpg') }}" />
+                                <img src="{{ asset('images/product2.jpg') }}" />
+                                <img src="{{ asset('images/product3.jpg') }}" />
                             </div>
                             </div>
                         </a>
@@ -778,9 +778,9 @@
                         <a href="https://www.sephora.co.id/?dxid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&dxgaid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&gad_source=1&gad_campaignid=741857502&gbraid=0AAAAADpAM4K4TF2FYfJpAWhyEVSxiQW8F&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB" target="_blank" class="shoppable-link">
                             <div class="shoppable-card">
                             <div class="shoppable-items">
-                                <img src="./image/sp1.jpg" />
-                                <img src="./image/sp2.jpg" />
-                                <img src="./image/sp3.jpg" />
+                                <img src="{{ asset('images/sp1.jpg') }}" />
+                                <img src="{{ asset('images/sp2.jpg') }}" />
+                                <img src="{{ asset('images/sp3.jpg') }}" />
                             </div>
                             </div>
                         </a>
@@ -789,9 +789,9 @@
                         <a href="https://www.sephora.co.id/?dxid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&dxgaid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB&gad_source=1&gad_campaignid=741857502&gbraid=0AAAAADpAM4K4TF2FYfJpAWhyEVSxiQW8F&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac_02XYG6VmnKzNaLcHTuhj-mW9W6_Muf7ZDBLoGQ31DCrmGlLlMvoAaAupvEALw_wcB" target="_blank" class="shoppable-link">
                             <div class="shoppable-card">
                             <div class="shoppable-items">
-                                <img src="./image/product1.jpg" />
-                                <img src="./image/product2.jpg" />
-                                <img src="./image/product3.jpg" />
+                                <img src="{{ asset('images/product1.jpg') }}" />
+                                <img src="{{ asset('images/product2.jpg') }}" />
+                                <img src="{{ asset('images/product3.jpg') }}" />
                             </div>
                             </div>
                         </a>
@@ -812,7 +812,7 @@
                 <a href="https://www.amazon.com/dp/B002I37TBK/ref=asc_df_B002I37TBK1744628400000?tag=31846-paloma-20&creative=395261&creativeASIN=B002I37TBK&linkCode=asn&ascsubtag=srctok-c88bf09ba0c15267&btn_ref=srctok-c88bf09ba0c15267&th=1" target="_blank" class="shop-link">
                     <div class="shop-section p-3 rounded-5 mt-3">
                       <div class="d-flex justify-content-center">
-                        <img src="./image/palladio.jpg" alt="Product" class="img-fluid product-img" />
+                        <img src="{{ asset('images/palladio.jpg') }}" alt="Product" class="img-fluid product-img" />
                       </div>
                       <p class="mt-3 text-white">
                         Palladio Lip Stain, Hydrating and Waterproof formula, Matte Color Look,
@@ -828,9 +828,9 @@
                 <a href="https://linktr.ee/paloma#collection-d46d40bf-52e9-47a0-9408-231b728fc882" target="_blank" class="shop-link">
                     <div class="shop-section p-3 rounded-5 mt-3">
                       <div class="d-flex justify-content-between">
-                        <img src="./image/sp1.jpg" alt="Product 1" class="img-fluid product-img" />
-                        <img src="./image/sp4.jpg" alt="Product 2" class="img-fluid product-img" />
-                        <img src="./image/product2.jpg" alt="Product 3" class="img-fluid product-img" />
+                        <img src="{{ asset('images/sp1.jpg') }}" alt="Product 1" class="img-fluid product-img" />
+                        <img src="{{ asset('images/sp4.jpg') }}" alt="Product 2" class="img-fluid product-img" />
+                        <img src="{{ asset('images/product2.jpg') }}" alt="Product 3" class="img-fluid product-img" />
                       </div>
                       <p class="mt-3 text-white">
                         DAILY MAKE UP FAVORITES <br />
@@ -844,9 +844,9 @@
                 <a href="https://linktr.ee/paloma#collection-1d54b030-9570-41ed-8003-b0e74bac2f23" target="_blank" class="shop-link">
                     <div class="shop-section p-3 rounded-5 mt-3">
                     <div class="d-flex justify-content-between">
-                        <img src="./image/lipgloss1.jpg" alt="Product 1" class="img-fluid product-img" />
-                        <img src="./image/lipgloss2.jpg" alt="Product 2" class="img-fluid product-img" />
-                        <img src="./image/lipgloss3.jpg" alt="Product 3" class="img-fluid product-img" />
+                        <img src="{{ asset('images/lipgloss1.jpg') }}" alt="Product 1" class="img-fluid product-img" />
+                        <img src="{{ asset('images/lipgloss2.jpg') }}" alt="Product 2" class="img-fluid product-img" />
+                        <img src="{{ asset('images/lipgloss3.jpg') }}" alt="Product 3" class="img-fluid product-img" />
                     </div>
                     <p class="mt-3 text-white">
                         BEST LIP GLOSS <br /><small class="thin-text">12 Products</small>
@@ -854,14 +854,14 @@
                     <span class="ellipsis-icon"><i class="bi bi-three-dots-vertical"></i></span>
                     </div>
                 </a>
-                
+
                 <!-- Produk 3 -->
                 <a href="https://linktr.ee/paloma#collection-e9c5f0b1-20ff-4025-b730-023e926554c8" target="_blank" class="shop-link">
                     <div class="shop-section p-3 rounded-5 mt-3">
                     <div class="d-flex justify-content-between">
-                        <img src="./image/beginnermakeup.jpg" alt="Product 1" class="img-fluid product-img" />
-                        <img src="./image/beginnermakeup2.jpg" alt="Product 2" class="img-fluid product-img" />
-                        <img src="./image/beginnermakeup3.jpg" alt="Product 3" class="img-fluid product-img" />
+                        <img src="{{ asset('images/beginnermakeup.jpg') }}" alt="Product 1" class="img-fluid product-img" />
+                        <img src="{{ asset('images/beginnermakeup2.jpg') }}" alt="Product 2" class="img-fluid product-img" />
+                        <img src="{{ asset('images/beginnermakeup3.jpg') }}" alt="Product 3" class="img-fluid product-img" />
                     </div>
                     <p class="mt-3 text-white">
                         BEGINNERS MAKE UP GUIDE <br /><small class="thin-text">22 Products</small>
@@ -869,14 +869,14 @@
                     <span class="ellipsis-icon"><i class="bi bi-three-dots-vertical"></i></span>
                     </div>
                 </a>
-                
+
                 <!-- Produk 4 -->
                 <a href="https://linktr.ee/paloma#collection-ca3d9aad-f350-4fe4-ba71-95bbecd2006e" target="_blank" class="shop-link">
                     <div class="shop-section p-3 rounded-5 mt-3">
                     <div class="d-flex justify-content-between">
-                        <img src="./image/balm.jpg" alt="Product 1" class="img-fluid product-img" />
-                        <img src="./image/balm2.jpg" alt="Product 2" class="img-fluid product-img" />
-                        <img src="./image/balm3.jpg" alt="Product 3" class="img-fluid product-img" />
+                        <img src="{{ asset('images/balm.jpg') }}" alt="Product 1" class="img-fluid product-img" />
+                        <img src="{{ asset('images/balm2.jpg') }}" alt="Product 2" class="img-fluid product-img" />
+                        <img src="{{ asset('images/balm3.jpg') }}" alt="Product 3" class="img-fluid product-img" />
                     </div>
                     <p class="mt-3 text-white">
                         BEST LIP BALMS <br /><small class="thin-text">8 Products</small>
@@ -884,14 +884,14 @@
                     <span class="ellipsis-icon"><i class="bi bi-three-dots-vertical"></i></span>
                     </div>
                 </a>
-                
+
                 <!-- Produk 5 -->
                 <a href="https://linktr.ee/paloma#collection-956063bf-57d6-4e34-a9c9-f1e9839f7617" target="_blank" class="shop-link">
                     <div class="shop-section p-3 rounded-5 mt-3">
                     <div class="d-flex justify-content-between">
-                        <img src="./image/best.jpg" alt="Product 1" class="img-fluid product-img" />
-                        <img src="./image/best2.jpg" alt="Product 2" class="img-fluid product-img" />
-                        <img src="./image/best3.jpg" alt="Product 3" class="img-fluid product-img" />
+                        <img src="{{ asset('images/best.jpg') }}" alt="Product 1" class="img-fluid product-img" />
+                        <img src="{{ asset('images/best2.jpg') }}" alt="Product 2" class="img-fluid product-img" />
+                        <img src="{{ asset('images/best3.jpg') }}" alt="Product 3" class="img-fluid product-img" />
                     </div>
                     <p class="mt-3 text-white">
                         AMAZON FAVORITES <br /><small class="thin-text">8 Products</small>
@@ -913,7 +913,7 @@
 
         <!-- Bootstrap JS -->
         <script>
-            
+
       const btnLinks = document.getElementById("btnLinks");
       const btnShop = document.getElementById("btnShop");
       const linksSection = document.getElementById("linksSection");
