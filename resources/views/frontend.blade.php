@@ -49,7 +49,7 @@
 
   <!-- Assignment Links -->
   <div class="max-w-6xl mx-auto mt-12">
-    <h1 class="text-4xl text-pink-700 font-bold text-center mb-10">📚 Halaman Tugas ETS</h1>
+    <h1 class="text-4xl text-pink-700 font-bold text-center mb-10">📚 Halaman Tugas PWEB</h1>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <a href="{{ url('/blog') }}" class="block bg-white hover:bg-pink-100 transition border border-pink-200 shadow rounded-2xl py-5 px-6 text-center text-pink-800 font-semibold">
