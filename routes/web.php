@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\BolpenController;
 
 //import java.io -> USE IN PHP
 //imlluminate/Support/Facaedes tuh kyk packages di java, yg belakang nama class
@@ -73,6 +74,14 @@ Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika for
 Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
-
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+
+Route::get('/bolpen', [BolpenController::class, 'index']);
+Route::get('/bolpen/tambah', [BolpenController::class, 'tambah']);
+Route::post('/bolpen/store', [BolpenController::class, 'store']);
+Route::get('/bolpen/edit/{id}', [BolpenController::class, 'edit']);
+Route::post('/bolpen/update', [BolpenController::class, 'update']);
+Route::get('/bolpen/hapus/{id}', [BolpenController::class, 'hapus']);
+Route::get('/bolpen/cari', [BolpenController::class, 'cari']);
 

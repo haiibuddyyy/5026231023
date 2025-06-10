@@ -1,5 +1,4 @@
 @extends('templateBootstrap')
-
 @section('content')
 
 <h3>Data Pegawai</h3>
@@ -43,7 +42,7 @@
 
     <div class="row">
         <div class="col-6">
-            <input type="submit" value="Simpan Data" class="btn btn-success">
+            <input type="submit" value="Simpan Data" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded">
         </div>
     </div>
 </form>
