@@ -42,6 +42,21 @@
         th i {
             vertical-align: middle;
         }
+                .toggle-tersedia {
+            width: 130px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn-success {
+            background-color: #ec4899 !important;  /* pink */
+            border: none;
+        }
+
+        .btn-secondary {
+            background-color: #9ca3af !important; /* abu */
+            border: none;
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

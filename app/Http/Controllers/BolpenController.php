@@ -78,4 +78,21 @@ class BolpenController extends Controller
 
         return view('bolpen.index', compact('bolpen', 'sort', 'order'));
     }
+
+    public function toggleTersedia(Request $request)
+    {
+        $bolpen = DB::table('bolpen')->where('id', $request->id)->first();
+
+        if ($bolpen) {
+            $newStatus = $bolpen->tersedia ? 0 : 1;
+
+            DB::table('bolpen')->where('id', $request->id)->update([
+                'tersedia' => $newStatus
+            ]);
+
+            return response()->json(['status' => $newStatus]);
+        }
+
+        return response()->json(['error' => 'Not Found'], 404);
+    }
 }

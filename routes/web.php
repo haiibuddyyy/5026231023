@@ -85,3 +85,6 @@ Route::post('/bolpen/update', [BolpenController::class, 'update']);
 Route::get('/bolpen/hapus/{id}', [BolpenController::class, 'hapus']);
 Route::get('/bolpen/cari', [BolpenController::class, 'cari']);
 
+Route::post('/bolpen/toggle-tersedia', [BolpenController::class, 'toggleTersedia']);
+
+

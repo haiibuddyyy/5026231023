@@ -53,12 +53,11 @@
         <tr class="align-middle text-center">
             <td>{{ $b->merkbolpen }}</td>
             <td>Rp {{ number_format($b->hargabolpen, 0, ',', '.') }}</td>
-            <td>
-                @if ($b->tersedia)
-                    <span class="badge badge-success px-3 py-2">✓ Tersedia</span>
-                @else
-                    <span class="badge badge-secondary px-3 py-2">✕ Tidak</span>
-                @endif
+            <td class="text-center">
+                <button class="btn btn-sm toggle-tersedia {{ $b->tersedia ? 'btn-success' : 'btn-secondary' }}"
+                    data-id="{{ $b->id }}">
+                    {{ $b->tersedia ? '✓ Tersedia' : '✕ Tidak Tersedia' }}
+                </button>
             </td>
             <td>{{ $b->berat }} gr</td>
             <td>
@@ -73,4 +72,34 @@
 <div class="mt-3">
     {{ $bolpen->links() }}
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '.toggle-tersedia', function () {
+            var btn = $(this);
+            var id = btn.data('id');
+            console.log('ID yang diklik:', id);
+
+            $.ajax({
+                url: '/bolpen/toggle-tersedia',
+                method: 'POST',
+                data: {
+                    _token: '{{ csrf_token() }}',
+                    id: id
+                },
+                success: function (res) {
+                    console.log('Respon:', res);
+
+                    if (res.status == 1) {
+                        btn.removeClass('btn-secondary').addClass('btn-success').text('✓ Tersedia');
+                    } else {
+                        btn.removeClass('btn-success').addClass('btn-secondary').text('✕ Tidak Tersedia');
+                    }
+
+                }
+            });
+        });
+    });
+    </script>
 @endsection
