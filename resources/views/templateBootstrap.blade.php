@@ -42,7 +42,7 @@
         th i {
             vertical-align: middle;
         }
-                .toggle-tersedia {
+        .toggle-tersedia {
             width: 130px;
             font-weight: 600;
             transition: 0.3s ease-in-out;
@@ -65,9 +65,8 @@
 
 <body class="bg-pink-50 text-gray-800">
 
-    <!-- Hero Section (Tailwind Style) -->
     <section class="relative bg-pink-100 rounded-b-3xl shadow">
-        <div class="h-80 md:h-[400px] bg-cover bg-center rounded-b-3xl"
+        <div class="h-40 md:h-[240px] bg-cover bg-center rounded-b-3xl"
              style="background-image: url('/images/bgproductive.jpg');">
             <div class="h-full w-full bg-white/30 backdrop-blur-sm flex items-center justify-center">
                 <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Hi there!</h1>
@@ -82,38 +81,33 @@
         </div>
     </section>
 
-    <!-- Info Section -->
     <div class="pt-24 text-center">
         <h2 class="text-2xl font-bold">Nadya Luthfiyah Rahma</h2>
         <p class="text-gray-600 italic">5026231023</p>
     </div>
 
-    <!-- Navbar (Bootstrap Style) -->
     <nav class="navbar navbar-expand-sm bg-light mt-4 shadow-sm">
         <div class="container">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link" href="#">All Front End</a></li>
+                <li class="nav-item"><a class="nav-link" href="/frontend">All Front End</a></li>
                 <li class="nav-item"><a class="nav-link" href="/pegawai">Pegawai</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Tugas CRUD</a></li>
+                <li class="nav-item"><a class="nav-link" href="/bolpen">Tugas CRUD</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">EAS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Latihan 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pagecounter">Latihan 1</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Latihan 2</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Latihan 3</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Content Section -->
     <div class="container my-5">
         @yield('content')
     </div>
 
-    <!-- Footer -->
     <footer class="text-center text-sm text-gray-500 mt-12 italic py-3">
         &copy; {{ date('Y') }} | Nadya Luthfiyah Rahma - Tugas PWEB 💫
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>

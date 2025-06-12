@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BolpenController;
+use App\Http\Controllers\PageCounterController;
 
 //import java.io -> USE IN PHP
 //imlluminate/Support/Facaedes tuh kyk packages di java, yg belakang nama class
@@ -87,4 +88,5 @@ Route::get('/bolpen/cari', [BolpenController::class, 'cari']);
 
 Route::post('/bolpen/toggle-tersedia', [BolpenController::class, 'toggleTersedia']);
 
+Route::get('/pagecounter', [PageCounterController::class, 'index']);
 
