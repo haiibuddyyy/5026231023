@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BolpenController;
 use App\Http\Controllers\PageCounterController;
+use App\Http\Controllers\KaryawanDBController;
 
 //import java.io -> USE IN PHP
 //imlluminate/Support/Facaedes tuh kyk packages di java, yg belakang nama class
@@ -86,7 +87,13 @@ Route::post('/bolpen/update', [BolpenController::class, 'update']);
 Route::get('/bolpen/hapus/{id}', [BolpenController::class, 'hapus']);
 Route::get('/bolpen/cari', [BolpenController::class, 'cari']);
 
-Route::post('/bolpen/toggle-tersedia', [BolpenController::class, 'toggleTersedia']);
-
 Route::get('/pagecounter', [PageCounterController::class, 'index']);
+
+//route karyawanDB
+Route::get('/karyawan', [KaryawanDBController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanDBController::class, 'tambah']);
+Route::post('/karyawan/store', [KaryawanDBController::class, 'store']); //jika form dikirim, route ini akan dijalankan
+Route::post('/karyawan/update',[KaryawanDBController::class, 'update']);
+Route::get('/karyawan/hapus/{id}', [KaryawanDBController::class, 'hapus']);
+
 

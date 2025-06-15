@@ -48,6 +48,17 @@
             transition: 0.3s ease-in-out;
         }
 
+        .navbar .nav-link {
+        color: #d81b60; /* pink tua */
+        font-weight: 500;
+        transition: 0.3s;
+        }
+
+        .navbar .nav-link:hover {
+        color: #880e4f; /* darker on hover */
+        text-decoration: underline;
+        }
+
         .btn-success {
             background-color: #ec4899 !important;  /* pink */
             border: none;
@@ -57,6 +68,103 @@
             background-color: #9ca3af !important; /* abu */
             border: none;
         }
+
+        .form-switch-wrapper {
+        position: relative;
+        width: 150px;
+        height: 40px;
+        margin: auto;
+        }
+
+        .form-switch-wrapper.align-start {
+        margin-left: 0 !important;
+        margin-right: auto;
+        }
+
+        .toggle-tersedia {
+        display: none;
+        }
+
+        .switch-label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #fdfcfc;
+        border-radius: 30px;
+        position: relative;
+        cursor: pointer;
+        }
+
+        .switch-label .label-left,
+        .switch-label .label-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 12px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        z-index: 1;
+        color: #eae9e9;
+        }
+
+        .label-left {
+        left: 10px;
+        }
+
+        .label-right {
+        right: 10px;
+        }
+
+        .knob {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        transition: all 0.3s ease;
+        z-index: 2;
+        left: 2px;
+        background-color: rgb(255, 150, 167);
+        border: 2px solid pink;
+        }
+
+        /* ============= Toggle di KANAN (checked) = TIDAK TERSEDIA */
+        .toggle-tersedia:checked + .switch-label .knob {
+        left: calc(100% - 38px);
+        background-color: #d3f0fb;
+        border-color: rgb(140, 209, 232);
+        }
+
+        /* Teks yang aktif = Tidak Tersedia (kiri) */
+        .toggle-tersedia:checked + .switch-label .label-left {
+        color: rgb(73, 200, 243);
+        font-weight: bold;
+        }
+
+        /* Teks yang nonaktif = Tersedia (kanan) */
+        .toggle-tersedia:checked + .switch-label .label-right {
+        opacity: 0;
+        }
+
+
+        /* ============= Toggle di KIRI (unchecked) = TERSERDIA */
+        .toggle-tersedia:not(:checked) + .switch-label .knob {
+        left: 2px;
+        background-color: pink;
+        border-color: rgb(255, 173, 187);
+        }
+
+        /* Teks yang aktif = Tersedia (kanan) */
+        .toggle-tersedia:not(:checked) + .switch-label .label-right {
+        color: rgb(255, 142, 161);
+        font-weight: bold;
+        }
+
+        /* Teks yang nonaktif = Tidak Tersedia (kiri) */
+        .toggle-tersedia:not(:checked) + .switch-label .label-left {
+        opacity: 0;
+        }
+
     </style>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -94,8 +202,8 @@
                 <li class="nav-item"><a class="nav-link" href="/bolpen">Tugas CRUD</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">EAS</a></li>
                 <li class="nav-item"><a class="nav-link" href="/pagecounter">Latihan 1</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Latihan 2</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Latihan 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="/karyawan">Latihan 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="/karyawan">Latihan 3</a></li>
             </ul>
         </div>
     </nav>

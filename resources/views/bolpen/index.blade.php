@@ -53,12 +53,20 @@
         <tr class="align-middle text-center">
             <td>{{ $b->merkbolpen }}</td>
             <td>Rp {{ number_format($b->hargabolpen, 0, ',', '.') }}</td>
-            <td class="text-center">
-                <button class="btn btn-sm toggle-tersedia {{ $b->tersedia ? 'btn-success' : 'btn-secondary' }}"
-                    data-id="{{ $b->id }}">
-                    {{ $b->tersedia ? '✓ Tersedia' : '✕ Tidak Tersedia' }}
-                </button>
-            </td>
+            <td>
+                <div class="form-switch-wrapper">
+                  <input type="checkbox"
+                         id="switch-{{ $b->id }}"
+                         class="form-check-input toggle-tersedia"
+                         data-id="{{ $b->id }}"
+                         {{ $b->tersedia ? '' : 'checked'  }}>
+                    <label for="switch-{{ $b->id }}" class="switch-label">
+                    <span class="label-left">Tidak Tersedia</span>
+                    <span class="label-right">Tersedia</span>
+                    <div class="knob"></div>
+                  </label>
+                </div>
+              </td>
             <td>{{ $b->berat }} gr</td>
             <td>
                 <a href="/bolpen/edit/{{ $b->id }}" class="btn btn-sm btn-warning">Edit</a>
@@ -77,6 +85,7 @@
 <script>
     $(document).ready(function () {
         $(document).on('click', '.toggle-tersedia', function () {
+            e.preventDefault();
             var btn = $(this);
             var id = btn.data('id');
             console.log('ID yang diklik:', id);
