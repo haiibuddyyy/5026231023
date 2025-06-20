@@ -12,7 +12,7 @@
 
             {{-- action mengarah ke karyawan/store untuk dilakukan routing --}}
             @foreach ($mykaryawan as $p)
-                    <form action="/eas" method="post">
+                    <form action="/eas/update" method="post">
                         {{ csrf_field() }}
                         <input type="hidden" name="id" value="{{ $p->kodepegawai}}">
 
@@ -35,7 +35,6 @@
                             <label for="departemen" class="form-label">Departemen</label>
                             <input type="text" class="form-control" id="departemen" name="departemen" value="{{ $p->departemen}}" required>
                         </div>
-                        <button type="submit" class="btn bg-pink-500 text-white">Simpan Data</button>
                     </form>
                     @endforeach
                 </div>
