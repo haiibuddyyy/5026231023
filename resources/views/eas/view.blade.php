@@ -23,7 +23,7 @@
 
                         <div class="mb-3">
                             <label for="namalengkap" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="namalengkap" name="namalengkap" value="{{ $p->namalengkap }}" required>
+                            <input type="text" class="form-control" id="namalengkap" name="namalengkap" value="{{ ucwords(strtolower($p->namalengkap)) }}" required>
                         </div>
 
                         <div class="mb-3">
