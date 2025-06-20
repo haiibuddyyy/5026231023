@@ -35,7 +35,6 @@ class KaryawanDBController extends Controller
         ]);
         // alihkan halaman ke halaman pegawai
         return redirect('/karyawan');
-
     }
 
     // update data karyawan

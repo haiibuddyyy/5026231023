@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BolpenController;
 use App\Http\Controllers\PageCounterController;
 use App\Http\Controllers\KaryawanDBController;
+use App\Http\Controllers\MyKaryawanController;
 
 //import java.io -> USE IN PHP
 //imlluminate/Support/Facaedes tuh kyk packages di java, yg belakang nama class
@@ -96,4 +97,8 @@ Route::post('/karyawan/store', [KaryawanDBController::class, 'store']); //jika f
 Route::post('/karyawan/update',[KaryawanDBController::class, 'update']);
 Route::get('/karyawan/hapus/{id}', [KaryawanDBController::class, 'hapus']);
 
-
+//route KaryawanEASDB
+Route::get('/eas', [MyKaryawanController::class, 'index']);
+Route::get('/eas/edit/{kodepegawai}', [MyKaryawanController::class, 'edit']);
+Route::post('/eas/update',[MyKaryawanController::class, 'update']);
+Route::get('/eas/view/{kodepegawai}', [MyKaryawanController::class, 'view']);

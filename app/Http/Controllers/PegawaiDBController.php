@@ -84,7 +84,6 @@ class PegawaiDBController extends Controller
 
             // mengirim data pegawai ke view index
         return view('pegawai.index',['pegawai' => $pegawai]);
-
     }
 }
 
